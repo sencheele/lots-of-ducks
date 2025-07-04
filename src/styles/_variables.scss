@@ -4,7 +4,11 @@ $color-gray:                 #6B7280;
 $color-dark:                 #1F2937;
 $color-dark-alt:             #1E1E1E;
 $color-accent-orange:        #EAB308;
+$color-accent-orange-light:  #FEC71C;
+$color-accent-orange-dark:   #CC9500;
 $color-accent-blue:          #2581EB;
+$color-accent-blue-light:    #439FFF;
+$color-accent-blue-dark:     #0763CD;
 
 // fonts
 $font-family-base: "Inter", sans-serif;
@@ -12,5 +16,5 @@ $ff-inter: "Inter", sans-serif;
 $ff-jura: "Jura", sans-serif;
 
 // transitions
-$transition-default: 0.3s ease;
-$transition-long: 0.6s ease;
+$trans-default: 0.3s ease;
+$trans-long: 0.6s ease;

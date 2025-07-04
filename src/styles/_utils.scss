@@ -1,6 +1,23 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+@use 'media' as *;
 
 .visually-hidden {
   @include visually-hidden;
+}
+
+.show-desktop {
+  display: flex !important;
+
+  @include vp-959 {
+    display: none !important;
+  }
+}
+
+.show-mobile {
+  display: none !important;
+
+  @include vp-959 {
+    display: flex !important;
+  }
 }

@@ -8,8 +8,91 @@
     <script type="module" src="./src/scripts/main.js" defer></script>
   </head>
   <body>
-    <section class="section">
-      Шаблон
-    </section>
+    <div class="overlay" data-overlay></div>
+    <header class="header" data-header>
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="logo header__logo" href="#">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.6509 18.0313C29.5036 17.1375 30.0756 16.0134 30.2962 14.798C30.5168 13.5827 30.3763 12.3293 29.8922 11.1929C29.408 10.0565 28.6014 9.08692 27.572 8.40408C26.5427 7.72124 25.3358 7.35507 24.1005 7.35086C22.8653 7.34666 21.6559 7.70459 20.622 8.3804C19.588 9.05621 18.7748 10.0203 18.2829 11.1533C17.791 12.2864 17.642 13.5388 17.8543 14.7557C18.0666 15.9725 18.631 17.1005 19.4775 18H13.8922C13.8922 18 9.69781 18.0313 3.90625 15.5897L7.32562 26.2272C8.07682 28.1189 9.37874 29.7414 11.0627 30.8846C12.7467 32.0279 14.7352 32.639 16.7706 32.6391H28.0159C28.9772 32.6391 29.929 32.4497 30.8171 32.0819C31.7051 31.714 32.512 31.1749 33.1917 30.4952C33.8714 29.8155 34.4106 29.0086 34.7784 28.1205C35.1463 27.2324 35.3356 26.2806 35.3356 25.3194C35.3353 23.4885 34.6485 21.7243 33.411 20.375C32.1734 19.0257 30.475 18.1894 28.6509 18.0313Z" fill="#FFDD55"/>
+              <path d="M11.0713 19.9266C11.0713 19.9266 15.0863 22.3497 18.2063 21.1141C23.4919 19.0203 26.7397 21.9556 26.7397 25.5063C26.7397 28.6328 23.2504 30.4984 20.2682 30.2991C14.5182 29.9153 11.6916 25.4238 11.0713 19.9266Z" fill="#FFEA98"/>
+              <path d="M30.3334 12.7919C30.3334 12.7919 29.3959 16.4397 26.7422 17.9997C26.7422 17.9997 32.7447 18.6497 36.0938 14.0181L30.3334 12.7919Z" fill="#EAB308"/>
+              <path d="M25.68 12.5222C26.0529 12.5222 26.3553 12.2198 26.3553 11.8469C26.3553 11.4739 26.0529 11.1716 25.68 11.1716C25.307 11.1716 25.0046 11.4739 25.0046 11.8469C25.0046 12.2198 25.307 12.5222 25.68 12.5222Z" fill="#1E1E1E"/>
+              <path d="M28.016 32.6391C28.9772 32.6391 29.929 32.4497 30.8171 32.0819C31.7051 31.714 32.5121 31.1749 33.1918 30.4952C33.8715 29.8155 34.4106 29.0086 34.7785 28.1205C35.1463 27.2324 35.3356 26.2806 35.3356 25.3194C35.3353 23.4885 34.6486 21.7243 33.411 20.375C32.1734 19.0257 30.475 18.1894 28.651 18.0312C29.3135 17.3469 29.8095 16.519 30.1005 15.612C30.3915 14.7049 30.4696 13.743 30.3288 12.8009C30.231 13 28.1303 17.1003 22.0313 18.0312C15.7813 18.9847 15.0994 27.125 25.4013 28.5234C35.7031 29.9219 28.016 32.6391 28.016 32.6391Z" fill="#FFC955"/>
+              <path d="M26.7397 25.5062C26.7397 21.9556 23.4919 19.02 18.2062 21.1141C18.0327 21.182 17.8553 21.2395 17.675 21.2862C16.7581 24.0428 18.8706 27.6362 25.4006 28.5231C25.8191 28.1392 26.154 27.6732 26.3844 27.1542C26.6148 26.6351 26.7357 26.0741 26.7397 25.5062Z" fill="#FFDD55"/>
+            </svg>
+
+            <span class="logo__text">
+              <span class="logo__text-part logo__text-part--orange">
+                Duck
+              </span>
+              <span class="logo__text-part logo__text-part--blue">
+                Shop
+              </span>
+            </span>
+          </a>
+
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link is-active" href="#">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  Каталог
+                </a>
+                <span class="main-nav__icon">
+                </span>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  Блог
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+
+            <button class="button button--orange header__button show-mobile" type="button">
+              Заказать обратный звонок
+            </button>
+          </nav>
+
+          <div class="header__group">
+            <a class="header__cart" href="">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.33325 7.33333L5.99992 2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.6667 7.33333L10 2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.33325 7.33333H14.6666" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.33325 7.33333L3.39992 12.2667C3.46225 12.5724 3.62982 12.8465 3.87344 13.0414C4.11707 13.2363 4.42132 13.3396 4.73325 13.3333H11.2666C11.8666 13.3333 12.4666 12.8667 12.5999 12.2667L13.7333 7.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 7.33333L6.66667 13.3333" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 10.3333H13" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.99992 7.33333L9.33325 13.3333" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <button class="button button--orange header__button show-desktop" type="button">
+              Заказать обратный звонок
+            </button>
+
+            <button class="header__toggle" type="button" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

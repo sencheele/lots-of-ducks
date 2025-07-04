@@ -1,0 +1,42 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.button {
+  @include reset-button;
+  @include typography(600, 15px, 1, $color-light);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  padding-inline: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color $trans-default;
+
+  &--orange {
+    background-color: $color-accent-orange;
+
+    @include hover {
+      background-color: $color-accent-orange-light;
+    }
+
+    @include active {
+      background-color: $color-accent-orange-dark;
+    }
+  }
+
+  &--blue {
+    background-color: $color-accent-blue;
+
+    @include hover {
+      background-color: $color-accent-blue-light;
+    }
+
+    @include active {
+      background-color: $color-accent-blue-dark;
+    }
+  }
+}
