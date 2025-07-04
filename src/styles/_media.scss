@@ -1,0 +1,81 @@
+// viewports
+$vp-390: 390px;
+$vp-616: 616px;
+$vp-848: 848px;
+$vp-1240: 1240px;
+$vp-1520: 1520px;
+$vp-1920: 1920px;
+
+// desktop-first
+@mixin vp-1919 {
+  @media (max-width: ($vp-1920 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1519 {
+  @media (max-width: ($vp-1520 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1239 {
+  @media (max-width: ($vp-1240 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-847 {
+  @media (max-width: ($vp-848 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-615 {
+  @media (max-width: ($vp-616 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-389 {
+  @media (max-width: ($vp-390 - 1px)) {
+    @content;
+  }
+}
+
+// mobile-first
+// @mixin vp-1919 {
+//   @media (min-width: ($vp-1920 - 1px)) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-1519 {
+//   @media (min-width: ($vp-1520 - 1px)) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-1239 {
+//   @media (min-width: ($vp-1240 - 1px)) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-847 {
+//   @media (min-width: ($vp-848 - 1px)) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-615 {
+//   @media (min-width: ($vp-616 - 1px)) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-389 {
+//   @media (min-width: ($vp-390 - 1px)) {
+//     @content;
+//   }
+// }
