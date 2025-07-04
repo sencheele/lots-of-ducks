@@ -1,13 +1,15 @@
 // colors
-$color-dark:                 #191a23;
-$color-dark-alt:             #292a32;
-$color-light:                #fff;
-$color-accent:               #b9ff66;
-$color-gray:                 #f3f3f3;
-$color-gray-alt:             #898989;
+$color-light:                #FFFFFF;
+$color-gray:                 #6B7280;
+$color-dark:                 #1F2937;
+$color-dark-alt:             #1E1E1E;
+$color-accent-orange:        #EAB308;
+$color-accent-blue:          #2581EB;
 
 // fonts
-$font-family-base: "NAME", sans-serif;
+$font-family-base: "Inter", sans-serif;
+$ff-inter: "Inter", sans-serif;
+$ff-jura: "Jura", sans-serif;
 
 // transitions
 $transition-default: 0.3s ease;

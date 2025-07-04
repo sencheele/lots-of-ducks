@@ -3,28 +3,19 @@
 @use '../media' as *;
 
 .container {
-  --content-width: 1440px;
-  --padding-inline: 40px;
+  --content-width: 1248px;
+  --padding-inline: 16px;
 
   max-width: calc(var(--content-width) + var(--padding-inline) * 2);
   height: 100%;
   margin: 0 auto;
   padding-inline: var(--padding-inline);
 
-  @include vp-1519 {
-    --content-width: 1160px;
+  @include vp-1279 {
+    --content-width: 928px;
   }
 
-  @include vp-1239 {
-    --content-width: 768px;
-  }
-
-  @include vp-847 {
-    --content-width: 576px;
-    --padding-inline: 20px;
-  }
-
-  @include vp-615 {
-    --content-width: 390px;
+  @include vp-959 {
+    --content-width: 343px;
   }
 }
