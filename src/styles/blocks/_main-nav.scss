@@ -21,6 +21,10 @@
     transition: transform $trans-default, opacity $trans-default;
   }
 
+  @include vp-959 {
+    top: 58px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
