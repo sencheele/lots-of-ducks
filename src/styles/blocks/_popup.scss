@@ -1,0 +1,83 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.popup {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  padding: 16px;
+  background-color: rgba(#000, 0.1);
+  transition: opacity $trans-default, visibility $trans-default;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &__body {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    height: auto;
+    border-radius: 16px;
+    background-color: $color-light;
+    transform: translate(-50%, -50%);
+
+    &--feedback {
+      padding: 40px;
+
+      @include vp-959 {
+        padding: 20px;
+      }
+    }
+  }
+
+  &__button {
+    @include flex-center;
+
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    padding: 0;
+    border: 1px solid transparent;
+    transition: border-color $trans-default, opacity $trans-default;
+
+    @include vp-959 {
+      min-width: auto;
+      width: 26px;
+      height: 26px;
+      border-radius: 5px;
+    }
+
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+      stroke: $color-gray-alt;
+      transition: stroke $trans-default;
+    }
+
+    @include hover {
+      border-color: $color-accent-blue;
+
+      svg {
+        stroke: $color-accent-blue;
+      }
+    }
+
+    @include active {
+      border-color: $color-accent-blue-dark;
+
+      svg {
+        stroke: $color-accent-blue-dark;
+      }
+    }
+  }
+}

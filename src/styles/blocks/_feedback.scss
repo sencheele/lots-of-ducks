@@ -1,0 +1,32 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 340px;
+
+  @include vp-959 {
+    max-width: 310px;
+    width: auto;
+  }
+
+  &__note {
+    @include typography(400, 14px, 1.5);
+  }
+
+  &__note-link {
+    color: $color-accent-blue;
+    transition: color $trans-default;
+
+    @include hover {
+      color: $color-accent-blue-light;
+    }
+
+    @include active {
+      color: $color-accent-blue-dark;
+    }
+  }
+}

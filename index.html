@@ -198,5 +198,44 @@
         </div>
       </section>
     </main>
+
+    <div class="popup">
+      <div class="popup__body popup__body--feedback">
+        <button class="button popup__button">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.99978 10L13.5353 13.5355M6.46424 13.5355L9.99978 10L6.46424 13.5355ZM13.5353 6.46447L9.99978 10L13.5353 6.46447ZM9.99978 10L6.46424 6.46447L9.99978 10Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="feedback">
+          <form action="" class="feedback-form">
+            <label class="feedback-form__field">
+              <span class="feedback-form__label">
+                Имя <span class="feedback-form__required">*</span>
+              </span>
+              <input class="feedback-form__input" type="text" required placeholder="Введите ваше имя">
+            </label>
+
+            <label class="feedback-form__field">
+              <span class="feedback-form__label">
+                Телефон <span class="feedback-form__required">*</span>
+              </span>
+              <input class="feedback-form__input" type="tel" required placeholder="+7 000 000 00 00" maxlength="16">
+            </label>
+
+            <button class="button button--orange feedback-form__button" type="submit">
+              Отправить
+            </button>
+          </form>
+
+          <div class="feedback__note">
+            <p>
+              Нажимая кнопку &laquo;Отправить&raquo;, вы&nbsp;соглашаетесь с&nbsp;
+              <a class="feedback__note-link" href="#">политикой конфиденциальности</a> и&nbsp;<a class="feedback__note-link" href="#">договором оферты</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

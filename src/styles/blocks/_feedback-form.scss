@@ -1,0 +1,50 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  &__label {
+    @include typography(500, 16px, 1);
+  }
+
+  &__required {
+    color: $color-orange;
+  }
+
+  &__input {
+    @include typography(400, 14px, 1);
+
+    height: 40px;
+    padding-inline: 16px;
+    border: 1px solid $color-gray-light;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color $trans-default;
+
+    &::placeholder {
+      @include typography(500, 14px, 1, #A7A7A7);
+    }
+
+    @include hover {
+      border-color: $color-accent-blue-light;
+    }
+
+    @include active {
+      border-color: $color-accent-blue-dark;
+    }
+
+    @include focus {
+      border-color: $color-accent-blue;
+    }
+  }
+}
