@@ -4,4 +4,8 @@
 
 .main {
   padding-top: 80px;
+
+  @include vp-959 {
+    padding-top: 58px;
+  }
 }
