@@ -2,6 +2,7 @@ export const initPopup = () => {
   const buttons = document.querySelectorAll('[data-button-open-popup]')
   const popup = document.querySelector('[data-popup]')
   const closeButton = document.querySelector('[data-button-close-popup]')
+  const form = document.querySelector('[data-feedback-form]')
 
   if (buttons.length === 0 || !popup || !closeButton) return
 
@@ -20,6 +21,8 @@ export const initPopup = () => {
   }
 
   const closePopup = () => {
+    form.reset()
+
     popup.classList.remove('is-active')
 
     document.removeEventListener('keydown', handleEscape)
