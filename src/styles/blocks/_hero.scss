@@ -2,7 +2,7 @@
 @use '../mixins' as *;
 @use '../media' as *;
 
-.intro {
+.hero {
   overflow: hidden;
 
   &__wrapper {
@@ -172,7 +172,7 @@
     }
 
     @include hover {
-      .intro__link {
+      .hero__link {
         color: $color-accent-blue;
       }
 
